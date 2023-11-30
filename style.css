@@ -3,7 +3,7 @@ body {
     background-color: rgb(214, 214, 214);
 }
 
-header {
+.header {
     text-align: center;
     padding: 20px;
     background-color: white;
