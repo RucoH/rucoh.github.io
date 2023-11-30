@@ -21,6 +21,7 @@ header {
 }
 
 .bar a {
+    font-family: 'Trebuchet MS';
     float: left;
     display: block;
     color: #f2f2f2;
@@ -33,7 +34,7 @@ header {
   
 .bar a:hover {
     background-color: #ddd;
-    color: black;
+    color: rgb(70, 70, 70);
 }
 
 .rightcolumn {
