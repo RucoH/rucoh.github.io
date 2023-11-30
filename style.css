@@ -42,23 +42,53 @@ body {
 
 }
 
-.rightcolumn {
+.leftcolumn {
 
     float: left;
-    width: 25%;
-    background-color: #ffffff;
-    padding-left: 20px;
-
-  }
-
-.AboutMe {
-    text-align: center;
-    font-family: 'Trebuchet MS';
-    color: rgb(90, 90, 90);
-    font-size: 20px;
+    width: 49.5%;
+    padding-right: 0px;
 }
+
+.photoAlp{
+    border-radius: 50%;
+    width: 500px;
+}
+
+.rightcolumn {
+
+    float:  right;
+    width: 49.5%;
+    
+}
+
+.card {
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}  
 
 footer{
     text-align: center;
     color: rgb(170, 170, 170);
 }
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .bar a {
+      float: none;
+      width: 100%;
+    }
+  }
