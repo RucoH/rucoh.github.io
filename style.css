@@ -3,20 +3,35 @@ body {
     background-color: white;
 }
 
-.header {
-    text-align: center;
-    padding: 1px;
-    background-color: rgb(114, 202, 114);
+header {
+    text-align: left;
+    padding: 10px;
+    background-color: white;
+    font-family: 'Trebuchet MS';
+    color: rgb(90, 90, 90);
 
 }
 
-.buttons {
-    float: left;
-    font-family: 'Trebuchet MS';
-    font-size: 35px;
-    color: rgb(90, 90, 90);
+.bar {
+    overflow: hidden;
+    background-color: rgb(114, 202, 114);
     
 }
+
+.bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Links - change color on hover */
+.bar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
 .AboutMe {
     text-align: center;
