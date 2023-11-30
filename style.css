@@ -4,11 +4,12 @@ body {
 }
 
 header {
-    text-align: left;
-    padding: 10px;
+    text-align: center;
+    padding: 20px;
     background-color: white;
     font-family: 'Trebuchet MS';
     color: rgb(90, 90, 90);
+    font-size: 30px;
 
 }
 
@@ -27,7 +28,6 @@ header {
     text-decoration: none;
   }
   
-  /* Links - change color on hover */
 .bar a:hover {
     background-color: #ddd;
     color: black;
