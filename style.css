@@ -6,7 +6,7 @@ body {
 .header {
     text-align: center;
     padding: 1px;
-    background-color: green;
+    background-color: rgb(114, 202, 114);
 
 }
 
@@ -20,5 +20,6 @@ body {
 
 .AboutMe {
     text-align: center;
+    font-family: 'Trebuchet MS';
     color: rgb(90, 90, 90);
 }
