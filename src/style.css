@@ -1,14 +1,16 @@
 @charset "utf-8";
 body {
     background-color: rgb(255, 255, 255);
+    margin: 0;
 }
 
 .navBar {
     overflow: hidden;
     background-color: black;
     font-family: "Lato", sans-serif;
-    font-weight: bold;
+
     width: 100%;
+    
 }
 
 .navBar a {
@@ -19,6 +21,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
     
 }
 
@@ -37,7 +40,7 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    font-weight: bold;
+
 }
 
 .navBar a:hover, .dropDown:hover .navBarButton {
@@ -83,7 +86,7 @@ body {
 
 .photoAlp{
     border-radius: 50%;
-    width: 500px;
+    width: 300px;
 }
 
 .rightcolumn {
@@ -95,10 +98,21 @@ body {
 
 .card {
     background-color: black;
-    margin-top: 20px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+}   
+.cardPhoto{
+    background-color: black;
+    margin: 20px;
     text-align: center;
     padding: 20px;
     color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+
 }
 
 .row::after {
@@ -108,6 +122,10 @@ body {
 }  
 
 footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     color: rgb(212, 212, 212);
 }
