@@ -100,7 +100,6 @@ body {
         border: none;
         outline: none;
         color: white;
-        padding: 14px 16px;
         margin: 0;
         text-align: center;
         float: none;
@@ -121,7 +120,7 @@ body {
     
     .dropDownContent {
         display: none;
-        margin-left: 247px;
+        margin-left: 128px;
         background-color: #ddd;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
