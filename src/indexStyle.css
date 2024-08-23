@@ -1,10 +1,13 @@
 @charset "utf-8";
 
 body {
-    background-color: rgb(243, 7, 7);
+    background-color: rgb(40, 40, 40);
     margin: 0;
 }
 
+.container{
+    text-align: center;
+}
 img.portrait{
     width: 50px;
 
