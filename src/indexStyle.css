@@ -195,14 +195,13 @@ img.Avatar{
     
 }
 .containers2{
-    margin-top: -500px;
     display: flex;
     max-width: 600px;
     margin: auto;
 }
 
 .leftContainer2{
-    max-width: 300px;
+    min-width: 50%;
     margin: auto;
 }
 .leftContainer2 h1{
@@ -224,7 +223,7 @@ img.Avatar{
 
 }
 .rightContainer2{
-    max-width: 300px;
+    min-width: 50%;
     margin: auto;
 }
 .rightContainer2 h1{
