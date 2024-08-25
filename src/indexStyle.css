@@ -156,9 +156,7 @@ img.Avatar{
     color: rgb(255, 255, 255);
 
 } 
-.Education{
 
-}
 
 .Education h3{
     color: #8d8d8d;
@@ -216,7 +214,7 @@ img.Avatar{
 
 }
 .leftContainer2 h3{
-    color: white;
+    color: #8d8d8d;
     font-size: 18px;
     font-family: "Lato", sans-serif;
     text-align: center;
@@ -239,7 +237,7 @@ img.Avatar{
 
 }
 .rightContainer2 h3{
-    color: white;
+    color: #8d8d8d;
     font-size: 18px;
     font-family: "Lato", sans-serif;
     text-align: center;
