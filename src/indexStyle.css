@@ -99,7 +99,7 @@ body {
     position: relative;
     flex-wrap: wrap;
     margin: auto;
-    max-width: 1200px;
+    max-width: 60%;
 
 
 }
@@ -108,7 +108,7 @@ body {
     text-align: center;
     position: relative;
     padding: 30px;
-    max-width: 400px;
+    max-width: 30%;
 
 }
 .portrait-title h2{
@@ -139,7 +139,7 @@ img.Avatar{
 .rightContainer{
 
     position: relative;
-    max-width: 800px;
+    max-width: 62.2%;
     padding: 30px;
     
 
