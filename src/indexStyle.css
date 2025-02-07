@@ -88,7 +88,6 @@ body {
 /* MAIN */
 .containers{
     padding: 50px;
-
     display: flex;
     max-width: 100%;
 
@@ -275,3 +274,90 @@ footer{
     font-size: 18px;
 }
 /* MAIN */
+
+/* Gallery MAIN*/
+.galleryContainers{
+    max-width: 100%;
+    display: flex;
+    padding: 50px;
+}
+
+.galleryRow{
+    max-width: 50%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.galleryContainersLeft{
+    background-color: #005B41;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+
+
+}
+.galleryContainersLeft h1{
+    color: white;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+
+
+}
+.galleryContainersLeft h2{
+    color: white;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+
+
+}
+.galleryContainersMiddle{
+    background-color: #005B41;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+
+
+}
+.galleryContainersMiddle h1{
+    color: white;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+
+}
+.galleryContainersMiddle h2{
+    color: white;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+
+}
+.galleryContainersRight{
+    background-color: #005B41;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+
+
+}
+.galleryContainersRight h1{
+    color: white;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+
+}
+.galleryContainersRight h2{
+    color: white;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+
+}
+
+
+/* Gallery MAIN*/
