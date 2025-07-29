@@ -29,6 +29,8 @@ This website is a digital representation of myself — my interests, my work, an
 * JavaScript (for interactivity)
 * GitHub Pages (for free hosting)
 
+---
+
 ## 📄 License
 
 Distributed under the [MIT License](LICENSE).
