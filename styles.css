@@ -86,6 +86,9 @@ h1 { font-size: clamp(1.8rem, 2.6vw + 1rem, 3rem); margin: 0 0 .25rem; }
 .chips a::after { content: "↗"; font-size: .9em; opacity: .8; }
 .chips a:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,200,150,.18); }
 
+.contact-button { padding:.5rem .9rem; border-radius:999px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.06); color:inherit; font-weight:700; cursor:pointer; text-decoration: none; }
+.contact-button:hover { box-shadow:0 0 0 4px rgba(0,200,150,.35); }
+
 /* Two-column grid */
 .grid-two { display: grid; grid-template-columns: 1fr; gap: 1rem; }
 @media (min-width: 800px) { .grid-two { grid-template-columns: 1fr 1fr; } }
@@ -141,3 +144,4 @@ h1 { font-size: clamp(1.8rem, 2.6vw + 1rem, 3rem); margin: 0 0 .25rem; }
   .site-header, .site-footer { border: none; backdrop-filter: none; }
   .card { box-shadow: none; border: 1px solid #ccc; }
 }
+
