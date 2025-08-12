@@ -1,0 +1,143 @@
+/*
+  rucoh.github.io — minimal, responsive, no-JS site shell
+  Emerald + black palette, improved spacing & Projects styling
+*/
+:root {
+  --bg: #0b0f0e;           /* near-black */
+  --panel: #121618;        /* dark elevated */
+  --text: #ecf2f1;         /* soft white */
+  --muted: #b6c8c4;        /* muted text */
+  --brand: #00c896;        /* emerald */
+  --brand-600: #00a77d;
+  --ring: rgba(0, 200, 150, .35);
+  --maxw: 1100px;
+  --radius: 18px;
+}
+
+/* Base */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 10% -10%, rgba(0,200,150,.12), transparent 50%),
+              radial-gradient(800px 600px at 100% 0%, rgba(0,200,150,.08), transparent 40%),
+              var(--bg);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.container { width: min(100% - 2rem, var(--maxw)); margin-inline: auto; }
+
+h1 { font-size: clamp(1.8rem, 2.6vw + 1rem, 3rem); margin: 0 0 .25rem; }
+.kicker { color: var(--brand); font-weight: 600; margin: 0 0 1rem; }
+.lead { color: var(--muted); max-width: 70ch; }
+
+/* Header */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: saturate(140%) blur(8px);
+  background: color-mix(in oklab, var(--bg) 85%, black 15%);
+  border-bottom: 1px solid color-mix(in oklab, var(--brand) 30%, transparent 70%);
+}
+.header-inner { display: flex; align-items: center; gap: 1rem; padding: .75rem 0; }
+
+.brand { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--text); font-weight: 700; }
+.logo { width: 36px; height: 36px; border-radius: 12px; background: linear-gradient(135deg, var(--brand), var(--brand-600)); display: grid; place-items: center; color: #06251d; font-weight: 900; }
+.brand-text { letter-spacing: .5px; opacity: .9; }
+
+.nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+.nav a { color: var(--muted); text-decoration: none; font-weight: 600; padding: .4rem .6rem; border-radius: 10px; }
+.nav a:hover, .nav a:focus { outline: none; color: var(--text); background: rgba(255,255,255,.06); box-shadow: 0 0 0 4px var(--ring); }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: 120px 1fr; gap: 1.2rem; align-items: center; padding: 2rem 0; }
+.hero-media img { border-radius: 50%; border: 3px solid color-mix(in oklab, var(--brand) 60%, white 40%); box-shadow: 0 10px 30px rgba(0,0,0,.5), 0 0 0 10px rgba(0,200,150,.08); }
+.social { display: flex; gap: .75rem; margin-top: 1rem; flex-wrap: wrap; }
+.social a { color: var(--text); text-decoration: none; font-weight: 600; padding: .45rem .75rem; border-radius: 999px; background: linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.08); }
+.social a:hover { box-shadow: 0 0 0 4px var(--ring); }
+
+/* Cards & sections */
+.card {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.04);
+  margin: 1rem 0;
+}
+.card h2 { margin-top: 0; font-size: clamp(1.2rem, 1.2vw + 1rem, 1.6rem); }
+
+/* Token chips (Projects için de kullanılıyor) */
+.chips { display: flex; flex-wrap: wrap; gap: .6rem; padding-left: 0; list-style: none; }
+.chips li, .chips a {
+  background: rgba(0,200,150,.14);
+  border: 1px solid rgba(0,200,150,.3);
+  padding: .55rem .9rem;
+  border-radius: 999px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: .4rem;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.chips a::after { content: "↗"; font-size: .9em; opacity: .8; }
+.chips a:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,200,150,.18); }
+
+/* Two-column grid */
+.grid-two { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+@media (min-width: 800px) { .grid-two { grid-template-columns: 1fr 1fr; } }
+
+/* Tags */
+.tags { display: flex; flex-wrap: wrap; gap: .5rem; padding-left: 0; list-style: none; }
+.tags li { padding: .35rem .6rem; border-radius: 8px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08); }
+.sub { margin: .5rem 0 .35rem; color: var(--muted); font-weight: 700; }
+
+/* Timeline */
+.timeline { display: grid; gap: .9rem; }
+.timeline .item { display: grid; grid-template-columns: 110px 1fr; gap: .75rem; align-items: start; }
+.timeline .when { color: var(--brand); font-weight: 700; }
+.timeline h3 { margin: 0 0 .15rem; font-size: 1rem; }
+.timeline p { margin: 0; color: var(--muted); }
+
+/* Footer */
+.site-footer { margin: 2rem 0 3rem; color: var(--muted); }
+.site-footer .container { border-top: 1px dashed rgba(255,255,255,.12); padding-top: 1rem; }
+
+/* Accessibility & polish */
+:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto; } }
+
+/* Small-screen tweaks */
+@media (max-width: 520px) {
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .hero-media { display: grid; place-items: center; }
+  .nav { gap: .4rem .6rem; }
+}
+
+/* Optional light theme (OS tercihini takip eder) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f5fbfa;
+    --panel: #ffffff;
+    --text: #0c1412;
+    --muted: #3a4a46;
+    --ring: rgba(0, 200, 150, .25);
+  }
+  body {
+    background: radial-gradient(900px 700px at 10% -10%, rgba(0,200,150,.12), transparent 50%),
+                radial-gradient(700px 500px at 100% 0%, rgba(0,200,150,.08), transparent 40%),
+                var(--bg);
+  }
+  .site-header { background: color-mix(in oklab, var(--bg) 85%, white 15%); }
+  .chips a, .chips li { border-color: rgba(0,200,150,.35); }
+}
+
+/* Print */
+@media print {
+  body { background: #fff; color: #000; }
+  .site-header, .site-footer { border: none; backdrop-filter: none; }
+  .card { box-shadow: none; border: 1px solid #ccc; }
+}

@@ -1,117 +1,138 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="tr">
-    <head>
-        <base href="https://rucoh.github.io">
-        <link rel="icon" href="src/images/favicon.ico">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-        <script src="https://kit.fontawesome.com/f03dd71c54.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css"  media="screen" href="src/indexStyle.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Alperen Hoçur — Electrical & Electronics Engineer. Web, Java, AI projects." />
+  <title>About me - Alperen \"RucoH\" Hoçur</title>
+  <link rel="preload" href="assets/avatar.jpg" as="image">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="RucoH Home">
+        <span class="logo">R</span>
+        <span class="brand-text">rucoh.dev</span>
+      </a>
 
-        <title>
-            About me - Alperen "RucoH" Hocur
-        </title>
+      <nav class="nav" aria-label="Primary">
+        <a href="#home">HOME</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#contact">CONTACT ME</a>
+      </nav>
+    </div>
+  </header>
 
-        <body>
-            <meta charset="UTF-8">
-        
-                <div  class="main">
+  <main id="home" class="container">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="name">
+      <div class="hero-media">
+        <img src="assets/avatar.jpg" alt="Alperen Hoçur avatar" width="220" height="220" />
+      </div>
+      <div class="hero-text">
+        <h1 id="name">Alperen Hoçur</h1>
+        <p class="kicker">Electrical & Electronics Engineer</p>
+        <p class="lead">I am Alperen Hoçur, an Electrical Electronics Engineer with 5+ years in software. I build websites, write Java, and explore machine learning.</p>
+        <div class="social" aria-label="Sosyal bağlantılar">
+          <a href="https://github.com/RucoH" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.instagram.com/rucoh__" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+          <a href="https://www.linkedin.com/in/alperenhocur" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://dev.to/alperenhocur" target="_blank" rel="noopener" aria-label="dev.to">dev.to</a>
+        </div>
+      </div>
+    </section>
 
-                    <div class="navBar">
-                        <a href="https://rucoh.github.io"><i class="fa-solid fa-house"></i> HOME </a>
-                        <a href="https://rucoh.github.io/src/gallery.html"><i class="fa-solid fa-image"></i> GALLERY </a>
-                        <a href="mailto:alperenhocur@gmail.com"><i class="fa-solid fa-envelope"></i> CONTACT ME </a>
-                        <a href="https://huggingface.co/spaces/RucoH/img2img-studio"><i class="fa-solid fa-palette"></i> IMG2IMG STUDIO </a>
-                        <!-- <a href=""><i class="fa-solid fa-file"></i> CV </a> -->
-                        <!-- <button class="navBarButton" type="submit" style="float: right;"><i class="fas fa-search"></i></button> -->
+    <!-- About -->
+    <section class="card" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <p>
+        With a foundation in electronics and a passion for clean code, I focus on practical, reliable systems.
+        Interests span <strong>Software</strong>, <strong>AI</strong>, <strong>Guitar</strong>, and <strong>Programming</strong>.
+      </p>
+      <ul class="chips" role="list">
+        <li>Software</li>
+        <li>AI</li>
+        <li>Guitar</li>
+        <li>Programming</li>
+      </ul>
+    </section>
 
-                        <div class="dropDown">
-                            <button class="navBarButton">SOCIAL
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropDownContent">
-                                <a href="https://github.com/RucoH" target="_blank"><i class="fab fa-github"></i> GitHub </a>
-                                <a href="https://www.instagram.com/alperenhcr/" target="_blank" ><i class="fab fa-instagram"></i> Instagram </a>
-                                <a href="https://www.linkedin.com/in/alperenhocur" target="_blank" ><i class="fab fa-linkedin"></i> LinkedIn </a>
-                            
+    <!-- Education & Skills -->
+    <section class="grid-two">
+      <article class="card" aria-labelledby="edu-title">
+        <h2 id="edu-title">Education</h2>
+        <div class="timeline">
+          <div class="item">
+            <div class="when">2024 – ?</div>
+            <div class="what">
+              <h3>Namık Kemal University</h3>
+              <p>Electronics & Communication Engineering</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="when">2023 – 2024</div>
+            <div class="what">
+              <h3>Giresun University</h3>
+              <p>Electrical & Electronics</p>
+            </div>
+          </div>
+        </div>
+      </article>
 
-                            </div>
-                        </div>    
-                    </div>
-                    
-                    
-                    <div class="containers">
-                        <div class="row">
+      <article class="card" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <h3 class="sub">Programming</h3>
+        <ul class="tags" role="list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+        </ul>
+        <h3 class="sub">Languages</h3>
+        <ul class="tags" role="list">
+          <li>Turkish</li>
+          <li>English</li>
+        </ul>
+      </article>
+    </section>
 
-                            <div class="leftContainer">
-                                <img class="Avatar" src="src/images/photoAlp.jpg" alt="Avatar">
-                                <div class="portrait-title">
-                                    <h2>Alperen Hocur</h2>
-                                    <h3 class="eem">Electrical Electronics Engineer</h3>
-                                    <h3></h3>
-                                    <h3></h3>
-                                </div>
+    <!-- Projects -->
+    <section id="projects" class="card" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <ul class="chips" role="list">
+        <li><a href="https://huggingface.co/spaces/RucoH/img2img-studio" target="_blank" rel="noopener">Img2Img Studio</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Medical QA Model</a></li>
+      </ul>
+    </section>
 
-                            </div>
+    <!-- Gallery placeholder -->
+    <section id="gallery" class="card" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Gallery</h2>
+      <p>Coming soon.</p>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>
+        For collaborations, feel free to reach out at
+        <a href="mailto:alperen.hocur@gmail.com">alperen.hocur@gmail.com</a>.
+      </p>
+    </section>
+  </main>
 
-                            <div class="rightContainer">
-                                <h1>About Me</h1>
-                                <p>I am Alperen Hocur, an Electrical Electronics Engineer.
-                                    With a solid background of over 5 years in software engineering.
-                                    My expertise includes, websites programming, JAVA programming, and machine learning applications.
-                                </p>
-                                <div class="rightContainerRow">
-                                    <div class="Interests">
-                                        <h3>Interest</h3>
-                                        <h4><i class="fa-solid fa-check"></i> Software</h4>
-                                        <h4><i class="fa-solid fa-check"></i> AI</h4>
-                                        <h4><i class="fa-solid fa-check"></i> Guitar</h4>
-                                        <h4><i class="fa-solid fa-check"></i> Programming</h4>
-                                    </div>
-    
-                                    <div class="Education">
-                                        <h3>Education</h3>
-                                        <h4><i class="fa-solid fa-graduation-cap"></i>  Namik Kemal University</h4>
-                                        <h5 class="date">2024-?</h5>
-                                        <h4><i class="fa-solid fa-graduation-cap"></i>  Giresun University</h4>
-                                        <h5 class="date">2023-2024</h5>
-                                    </div>
-                                </div>
-                                </div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Alperen Hoçur. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-    
-                        </div>
-                    </div>
-
-                    <div class="skills">
-                        <h1>Skills</h1>
-                        <div class="containers2">
-                            <div class="leftContainer2">
-                                <h1><i class="fa-solid fa-code"></i></h1>
-                                <h2> Programming </h2>
-                                <h3>HTML, CSS, JAVA, JAVASCRIPT, PYTHON</h3>
-                            </div>
-                            <div class="rightContainer2">
-                                <h1><i class="fa-solid fa-language"></i></h1>
-                                <h2> Languages </h2>
-                                <h3>Turkish, English</h3>
-                            </div>
-                        </div>
-                    </div>
-
-
-                
-
-                </div>
-
-                <footer>© 2024 Alperen Hocur. All Rights Reserved.</footer>
-        </body>
-
-    </head>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
