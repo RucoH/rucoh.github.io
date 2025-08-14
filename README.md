@@ -35,7 +35,7 @@ This website is a digital representation of myself — my interests, my work, an
 
 Distributed under the [MIT License](LICENSE).
 
-## 🙋‍♂️ Author
+## 👤 Author
 
 * GitHub: [@RucoH](https://github.com/RucoH)
 * Live Site: [https://rucoh.github.io/](https://rucoh.github.io/)
