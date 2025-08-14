@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Alperen Hoçur — Electrical & Electronics Engineer. Web, Java, AI projects." />
   <title>About me - Alperen \"RucoH\" Hoçur</title>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <link rel="preload" href="assets/avatar.jpg" as="image">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <link rel="preload" href="assets/images/avatar.jpg" as="image">
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/f03dd71c54.js" crossorigin="anonymous"></script>
 </head>
@@ -30,11 +30,11 @@
     </div>
   </header>
 
-  <main id="home" class="container">
+  <main id="home" class="container" aria-current="page/true">
     <!-- Hero -->
     <section class="hero" aria-labelledby="name">
       <div class="hero-media">
-        <img src="assets/avatar.jpg" alt="Alperen Hoçur avatar" width="220" height="220" />
+        <img src="assets/images/avatar.jpg" alt="Alperen Hoçur avatar" width="220" height="220" />
       </div>
       <div class="hero-text">
         <h1 id="name">Alperen Hoçur</h1>
@@ -45,7 +45,7 @@
           <a href="https://www.instagram.com/alperenhcr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
           <a href="https://www.linkedin.com/in/alperenhocur" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-square-linkedin"></i> LinkedIn</a>
           <a href="https://dev.to/alperenhocur" target="_blank" rel="noopener" aria-label="dev.to"><i class="fa-brands fa-dev"></i> dev.to</a>
-          <a href="https://orcid.org/0009-0003-5013-6002" target="_blank" rel="noopener" aria-label="OrcID"><i class="fa-brands fa-orcid"></i> OrcID</a>
+          <a href="https://orcid.org/0009-0003-5013-6002" target="_blank" rel="noopener" aria-label="OrcID"><i class="fa-brands fa-orcid"></i> ORCID</a>
         </div>
       </div>
     </section>
@@ -55,13 +55,12 @@
       <h2 id="about-title">About Me</h2>
       <p>
         With a foundation in electronics and a passion for clean code, I focus on practical, reliable systems.
-        Interests span <strong>Software</strong>, <strong>AI</strong>, <strong>Guitar</strong>, and <strong>Guitar</strong> <strong>Programming</strong>.
+        Interests span <strong>Software</strong>, <strong>AI</strong>, <strong>Programming</strong>, and <strong>Guitar</strong>.
       </p>
       <ul class="chips" role="list">
         <li>Software</li>
         <li>AI</li>
         <li>Programming</li>
-        <li>Machine Learning</li>
         <li>Guitar</li>
         
       </ul>
@@ -113,21 +112,28 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="card" aria-labelledby="projects-title">
+    <section id="projects" class="card" aria-labelledby="projects-title" aria-current="page/true">
       <h2 id="projects-title">Projects</h2>
       <ul class="chips" role="list">
         <li><a href="https://huggingface.co/spaces/RucoH/img2img-generator" target="_blank" rel="noopener">Img2Img Generator</a></li>
         <li><a href="https://github.com/RucoH/medical-qa-qwen-model" target="_blank" rel="noopener">Medical QA Model</a></li>
+        <li><a href="https://github.com/RucoH/speech2text" target="_blank" rel="noopener">Speech2Text</a></li>
       </ul>
     </section>
 
     <!-- Gallery placeholder -->
-    <section id="gallery" class="card" aria-labelledby="gallery-title">
+    <section id="gallery" class="card" aria-labelledby="gallery-title" aria-current="page/true">
       <h2 id="gallery-title">Gallery</h2>
-      <p>Coming soon.</p>
+      <h3 id="photo-title">Img2Img Generator</h3>
+      <div class="gallery-grid">
+        
+        <img src="assets/images/ai_photo1.png" alt="Project screenshot 1">
+        <img src="assets/images/ai_photo2.png" alt="Project screenshot 2">
+        <img src="assets/images/ai_photo3.png" alt="Project screenshot 3">
+    </div>
     </section>
 
-    <section id="cv" class="card" aria-labelledby="cv-title">
+    <section id="cv" class="card" aria-labelledby="cv-title" aria-current="page/true">
       <h2 id="cv-title">CV</h2>
 
       <!-- İsteğe bağlı kısa özet -->
@@ -153,7 +159,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="card" aria-labelledby="contact-title">
+    <section id="contact" class="card" aria-labelledby="contact-title" aria-current="page/true">
       <h2 id="contact-title">Contact</h2>
       <p>
         For collaborations, feel free to reach out at
