@@ -112,26 +112,71 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="card" aria-labelledby="projects-title" aria-current="page/true">
-      <h2 id="projects-title">Projects</h2>
-      <ul class="chips" role="list">
-        <li><a href="https://huggingface.co/spaces/RucoH/img2img-generator" target="_blank" rel="noopener">Img2Img Generator</a></li>
-        <li><a href="https://github.com/RucoH/medical-qa-qwen-model" target="_blank" rel="noopener">Medical QA Model</a></li>
-        <li><a href="https://github.com/RucoH/speech2text" target="_blank" rel="noopener">Speech2Text</a></li>
-      </ul>
-    </section>
+<section id="projects" class="card" aria-labelledby="projects-title">
+  <h2 id="projects-title">Projects</h2>
 
-    <!-- Gallery placeholder -->
-    <section id="gallery" class="card" aria-labelledby="gallery-title" aria-current="page/true">
-      <h2 id="gallery-title">Gallery</h2>
-      <h3 id="photo-title-1">Img2Img Generator</h3>
-      <div class="gallery-grid">
-        
-        <img src="assets/images/ai_photo1.png" alt="Project screenshot 1">
-        <img src="assets/images/ai_photo2.png" alt="Project screenshot 2">
-        <img src="assets/images/ai_photo3.png" alt="Project screenshot 3">
-
+  <div class="projects-grid" role="list">
+    <!-- 1 -->
+    <article class="project-card" role="listitem">
+      <div class="project-head">
+        <h3 class="project-title">Img2Img Generator</h3>
+        <a class="project-open" href="https://huggingface.co/spaces/RucoH/img2img-generator" target="_blank" rel="noopener" aria-label="Open Img2Img Generator">↗</a>
       </div>
+      <p class="project-desc">Stable Diffusion based img2img; Gradio interface, guidance/strength presets.</p>
+      <ul class="project-tags" role="list">0
+        <li>Diffusers</li><li>Gradio</li><li>SD 1.5</li>
+      </ul>
+    </article>
+
+    <!-- 2 -->
+    <article class="project-card" role="listitem">
+      <div class="project-head">
+        <h3 class="project-title">Medical QA Model</h3>
+        <a class="project-open" href="https://github.com/RucoH/medical-qa-qwen-model" target="_blank" rel="noopener" aria-label="Open Medical QA Model">↗</a>
+      </div>
+      <p class="project-desc">Qwen-based LoRA fine‑tuning; MedAlpaca/MediQA evaluations.</p>
+      <ul class="project-tags" role="list">
+        <li>Qwen</li><li>LoRA</li><li>HF Datasets</li>
+      </ul>
+    </article>
+
+    <!-- 3 -->
+    <article class="project-card" role="listitem">
+      <div class="project-head">
+        <h3 class="project-title">Speech‑to‑Text</h3>
+        <a class="project-open" href="https://github.com/RucoH/speech2text" target="_blank" rel="noopener" aria-label="Open Speech-to-Text">↗</a>
+      </div>
+      <p class="project-desc">Multilingual STT with Faster‑Whisper; batch & streaming, benchmark scripts.</p>
+      <ul class="project-tags" role="list">
+        <li>Whisper</li><li>CT2</li><li>Python</li>
+      </ul>
+    </article>
+
+    <!-- 4 -->
+    <article class="project-card" role="listitem">
+      <div class="project-head">
+        <h3 class="project-title">Stress Score</h3>
+        <a class="project-open" href="https://github.com/RucoH/stress-score" target="_blank" rel="noopener" aria-label="Open Stress Score">↗</a>
+      </div>
+      <p class="project-desc">EDA/PPG/Temp feature extraction, calibration (isotonic), dashboard prototype.</p>
+      <ul class="project-tags" role="list">
+        <li>Signal Proc</li><li>EDA</li><li>PPG</li>
+      </ul>
+    </article>
+
+    <!-- 5 -->
+    <article class="project-card" role="listitem">
+      <div class="project-head">
+        <h3 class="project-title">Gemini Prompt Optimization</h3>
+        <a class="project-open" href="https://github.com/RucoH/gemini-prompt-optimization" target="_blank" rel="noopener" aria-label="Open Gemini Prompt Optimization">↗</a>
+      </div>
+      <p class="project-desc">A lightweight framework that fixes response length with JSON mode + schema.</p>
+      <ul class="project-tags" role="list">
+        <li>Gemini</li><li>Prompting</li><li>Node</li>
+      </ul>
+    </article>
+  </div>
+</section>
 
       <!--
       
