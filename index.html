@@ -6,7 +6,7 @@
   <meta name="description" content="Alperen Hoçur — Electrical & Electronics Engineer. Web, Java, AI projects." />
   <title>About me - Alperen \"RucoH\" Hoçur</title>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-  <link rel="preload" href="assets/images/avatar.jpg" as="image">
+  <link rel="preload" href="assets/images/avatar1.png" as="image">
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/f03dd71c54.js" crossorigin="anonymous"></script>
 </head>
@@ -22,7 +22,10 @@
       <nav class="nav" aria-label="Primary">
         <a href="#home"><i class="fa-solid fa-house"></i> HOME</a>
         <a href="#projects"><i class="fa-solid fa-laptop-code"></i> PROJECTS</a>
-        <a href="#gallery"><i class="fa-regular fa-images"></i> GALLERY</a>
+        <!-- 
+        <a href="#gallery"><i class="fa-regular fa-images"></i> GALLERY</a> 
+         -->
+        <a href="#publications"><i class="fa-solid fa-book"></i> PUBLICATIONS</a>
         <a href="#cv"><i class="fa-solid fa-file"></i> CV</a>
         <a href="#contact"><i class="fa-solid fa-envelope"></i> CONTACT ME</a>
         
@@ -34,7 +37,7 @@
     <!-- Hero -->
     <section class="hero" aria-labelledby="name">
       <div class="hero-media">
-        <img src="assets/images/avatar.jpg" alt="Alperen Hoçur avatar" width="220" height="220" />
+        <img src="assets/images/avatar1.png" alt="Alperen Hoçur avatar" width="220" height="220" />
       </div>
       <div class="hero-text">
         <h1 id="name">Alperen Hoçur</h1>
@@ -46,6 +49,7 @@
           <a href="https://www.linkedin.com/in/alperenhocur" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-square-linkedin"></i> LinkedIn</a>
           <a href="https://dev.to/alperenhocur" target="_blank" rel="noopener" aria-label="dev.to"><i class="fa-brands fa-dev"></i> dev.to</a>
           <a href="https://orcid.org/0009-0003-5013-6002" target="_blank" rel="noopener" aria-label="OrcID"><i class="fa-brands fa-orcid"></i> ORCID</a>
+          <a href="https://www.researchgate.net/profile/Alperen-Hocur" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fa-brands fa-researchgate"></i> ResearchGate</a>
         </div>
       </div>
     </section>
@@ -58,10 +62,13 @@
         Interests span <strong>Software</strong>, <strong>AI</strong>, <strong>Programming</strong>, and <strong>Guitar</strong>.
       </p>
       <ul class="chips" role="list">
+        <li>Circuit Analysis</li>
+        <li>Electrical Circuits</li>
         <li>Software</li>
         <li>AI</li>
         <li>Programming</li>
         <li>Guitar</li>
+
         
       </ul>
     </section>
@@ -200,14 +207,36 @@
 
       -->
         
-    
+    <!-- Publications -->
+    <section id="publications" class="card" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+
+      <div class="publication-grid" role="list">
+        <!-- 1 -->
+        <article class="publication-card" role="listitem">
+          <div class="publication-head">
+            <h3 class="publication-title">Energy Efficiency of a Resistor-Fractional Order Capacitor Series Circuit During Charging from a DC Voltage Source</h3>
+            <a class="publication-open" href="https://zenodo.org/records/19153423" target="_blank" rel="noopener" aria-label="Open Publication Site">↗</a>
+          </div>
+          <p class="publicationt-desc">
+            Mercan, B., Hoçur, A., Mutlu, R
+            <br> Journal of Science and Education (PJSE).
+            <br> zenodo.org/records/19153423 (DOI: 10.5281/zenodo.19153423)
+
+          </p>
+          <ul class="publication-tags" role="list">
+            <li>Circuit Analysis</li><li>Digital Signal Processing</li><li>Electrical Circuits</li>
+          </ul>
+        </article>
+
+      </div>
     </section>
 
     <section id="cv" class="card" aria-labelledby="cv-title" aria-current="page/true">
       <h2 id="cv-title">CV</h2>
 
       <!-- İsteğe bağlı kısa özet -->
-      <p class="cv-note">Updated: Aug 2025 · PDF</p>
+      <p class="cv-note">Updated: May 2026 · PDF</p>
 
       <div class="cv-actions">
         <a class="btn-pill" href="assets/cv/Alperen-Hocur-CV.pdf" download>Download CV</a>
